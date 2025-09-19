@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Number System Converter</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Number System Converter</h1>
+
+    <div class="card">
+      <div class="controls">
+        <input id="inputValue" type="text" placeholder="Enter number (e.g. 1010, 255, FF)" />
+        <select id="fromBase">
+          <option value="2">Binary (2)</option>
+          <option value="8">Octal (8)</option>
+          <option value="10" selected>Decimal (10)</option>
+          <option value="16">Hex (16)</option>
+        </select>
+        <select id="toBase">
+          <option value="2">Binary (2)</option>
+          <option value="8">Octal (8)</option>
+          <option value="10">Decimal (10)</option>
+          <option value="16" selected>Hex (16)</option>
+        </select>
+      </div>
+
+      <div class="actions">
+        <button id="convertBtn">Convert</button>
+        <button id="swapBtn">Swap</button>
+        <button id="clearBtn">Clear</button>
+        <button id="copyBtn">Copy Result</button>
+      </div>
+
+      <div id="result" class="result">
+        Result: <span id="resultText">—</span>
+      </div>
+
+      <div id="message" class="message"></div>
+    </div>
+
+    <div class="card history">
+      <h2>History</h2>
+      <ul id="historyList"></ul>
+    </div>
+
+    <footer>Made with ♥ — Simple Dashboard</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
